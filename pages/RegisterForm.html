@@ -5,50 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Form</title>
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
 
 <body>
-    <div class="form">
+    <div class="form-container">
         <h1>Register Form</h1>
         <form>
             <div class="form-row">
-                <label for="name">First Name</label>
-                <input type="text" id="name" name="firstname" required>
+                <div class="form-group">
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" name="firstname" required>
+                </div>
 
-                <label for="name">Last Name</label>
-                <input type="text" id="name" name="lastname" required>
+                <div class="form-group">
+                    <label for="name">Last Name</label>
+                    <input type="text" id="name" name="lastname" required>
+                </div>
             </div>
 
             <div class="form-row">
-                <label for="birthdate">Birthdate</label>
-                <input type="date" id="birthdate" name="birthdate" required>
+                <div class="form-group">
+                    <label for="birthdate">Birthdate</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
 
-                <label for="gender">Gender</label>
-                <input type="radio" id="gender" name="gender" value="male">
-                <label for="gender">Male</label>
-                <input type="radio" id="gender" name="gender" value="female">
-                <label for="gender">Female</label>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" id="gender" name="gender" value="male" checked>Male
+                        </label>
+                        <label>
+                            <input type="radio" id="gender" name="gender" value="female">Female
+                        </label>
+                    </div>
+                </div>
             </div>
 
             <div class="form-row">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
             </div>
 
-            <label for="subject">Subject</label>
-            <select name="subject" id="subject">
-                <option value="">Choose option</option>
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-                <option value="javascript">JavaScript</option>
-            </select>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <select name="subject" id="subject">
+                    <option value="">Choose option</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+            </div>
 
             <button type="submit" class="submit-btn">Submit</button>
         </form>
     </div>
 </body>
-
 </html>
