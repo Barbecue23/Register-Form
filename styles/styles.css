@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #F0A8D0, #F7B5CA);
+    background: linear-gradient(45deg, #FFE9D0, #FFFED3, #BBE9FF, #B1AFFF);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +35,7 @@ h1 {
 
 label {
     display: block;
+    margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
