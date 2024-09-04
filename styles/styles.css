@@ -53,6 +53,7 @@ select {
 .radio-group {
     display: flex;
     gap: 1rem;
+    accent-color: green;
 }
 
 .submit-btn {
